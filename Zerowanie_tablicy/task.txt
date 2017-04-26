@@ -1,0 +1,64 @@
+Dana jest prostokątna tablica o m wierszach i n kolumnach, gdzie 1 ≤ m, n ≤ 5000. Komórki tej tablicy mają wartość 0 lub 1. Możliwa jest zmiana wartości dowolnej komórki tablicy z wyjątkiem komórek leżących w pierwszym rzędzie, przy czym pociąga ona za sobą zmianę wartości na przeciwne w czterech komórkach sąsiadujących (górnej, dolnej, lewej i prawej). Np. w tablicy:
+
+1 0 1                       
+1 1 1
+0 1 0
+
+zmiana w pozycji (1, 1) przekształci tablicę do następującego stanu:
+
+1 1 1
+0 0 0
+0 0 0
+
+Jeżeli komórka wskazana do zmiany znajduje się na granicy tablicy, zamienia się tylko sąsiadów znajdujących się w tablicy.
+
+Zadanie polega na stwierdzeniu, czy możliwe jest wyzerowanie tablicy, a jeżeli tak, jaka najmniejsza liczba kroków jest do tego potrzebna. Jako pojedynczy krok rozumiana jest zamiana wskazanej komórki tablicy razem z jej sąsiedztwem.
+
+Wejście:
+
+-W pierwszej linii wejścia znajdują się wartości m i n - rozmiary tablicy.
+-W następnych m wierszach znajduje się n 0 lub 1 rozdzielonych spacjami - zawartość tablicy.
+
+Wyjście:
+
+Jeżeli wyzerowanie tablicy jest możliwe, na wyjściu należy wyświetlić minimalną liczbę kroków, które są do tego potrzebne. W przeciwnym razie należy wyświetlić napis "niemozliwe".
+
+Przykład 1
+
+Wejście:
+
+3 3
+0 1 0
+1 1 1
+0 1 0
+
+Wyjście:
+
+1
+Przykład 2
+
+Wejście:
+
+6 8
+0 1 0 0 0 0 0 0
+1 1 1 0 1 0 1 0
+0 0 1 1 0 1 1 1
+1 1 0 1 1 1 0 0
+1 0 1 1 1 0 1 0
+0 1 0 1 0 1 0 0
+Wyjście:
+
+10
+Przykład 3
+
+Wejście:
+
+5 4
+0 1 0 0
+1 0 1 0
+1 1 0 1
+1 1 1 0
+1 1 1 0
+Wyjście:
+
+niemozliwe
