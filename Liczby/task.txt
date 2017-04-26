@@ -1,0 +1,12 @@
+Program dostaje od użytkownika liczby (każda inna) ma wyświetlić parę bądź pary liczb o najmniejszej różnicy
+
+Wejście:
+
+-program na początku w pierwszej linii otrzymuje liczbę n<=1000000.
+-następnie w liniach otrzymuje n RÓŻNYCH liczb z zakresu od 0 do 1000000.
+
+Wyjście:
+
+Program ma na początku wyświetlić wartość bezwzględną najmniejszej różnicy pomiędzy liczbami. Następnie program ma wyświetlić parę (bądź pary, w przypadku, gdy jest ich więcej) liczb o najmniejszej różnicy. Przez różnicę rozumiemy różnicę liczby większej od liczby mniejszej (różnica będzie zawsze dodatnia). Pary mają być wyświetlone od najmniejszych do największych. W parze także wyświetlamy najpierw liczbę mniejsza potem liczbę większą.
+
+UWAGA: Program powinien działać w złożoności O(nlog(n)).
