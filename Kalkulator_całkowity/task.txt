@@ -1,0 +1,70 @@
+Zadanie polega na napisaniu kalkulatora, który bêdzie oblicza³ wyra¿enia matematyczne na liczbach ca³kowitych zapisane w notacji nawiasowej.
+
+Dopuszczalne operacje, wraz z priorytetami dzia³añ: 
+Operator	Priorytet	Znaczenie
++	1	dodawanie
+~	1	odejmowanie
+*	2	mno¿enie
+d	2	dzielenie ca³kowite (div) liczby nieujemnej przez dodatni¹
+m	2	reszta z dzielenia ca³kowitego (mod) liczby nieujemnej przez dodatni¹
+^	3	potêgowanie ca³kowite (bez ujemnego wyk³adnika)
+Dodatkowo w wyra¿eniach mo¿na u¿ywaæ kilku rodzajów nawiasów: 
+(	)
+[	]
+{	}
+Poza wy¿ej wymienionymi operatorami kalkulator mo¿e oczywiœcie przyjmowaæ liczby ca³kowite: ujemne ze znakiem -, dodatnie bez znaku (aby nie mieszaæ + z operatorem dodawania).
+
+W rozwi¹zaniu wolno za³o¿yæ, ¿e ka¿dy z elementów wprowadzonego wyra¿enia bêdzie poprawny, a tak¿e, ¿e miêdzy ka¿dymi dwoma elementami bêdzie staæ znak bia³y (spacja). Nie wiemy natomiast nic na temat poprawnoœci (sensownoœci) wyra¿enia i program powinien sprawdzaæ, czy wprowadzone do kalkulatora wyra¿enie ma sens.
+
+Wejœcie
+
+W pierwszej linii wejœcia znajduje siê liczba n (1 ? n ? 100000) oznaczaj¹ca liczbê elementów wyra¿enia.
+W drugiej linii znajduj¹ siê kolejne elementy wyra¿enia (operatory lub liczby) rozdzielone znakami bia³ymi.
+Wyjœcie
+
+Na wyjœciu nale¿y wypisaæ:
+ bledne nawiasy 
+- komunikat oznaczaj¹cy b³êdne u³o¿enie nawiasów wzglêdem siebie (np. nawias zamykaj¹cy nie otwarty, niedomkniêty nawias otwieraj¹cy, przecinaj¹ce siê pary nawiasów ró¿nych typów)
+ bledna skladnia 
+- komunikat oznaczaj¹cy b³¹d w sk³adni wyra¿enia (np. dwie liczby obok siebie, dwa operatory obok siebie, pusta zawartoœæ nawiasów, itd.)
+ bledne dzialanie 
+- komunikat oznaczaj¹cy dzia³anie, którego nie mo¿na wykonaæ (np. dzielenie przez liczbê <= 0, ujemny wyk³adnik, 0 do potêgi 0) 
+
+jedn¹ liczbê, która jest wynikiem obliczeñ dla poprawnego wyra¿enia
+Sprawdzanie poprawnoœci nale¿y wykonaæ w kolejnoœci powy¿szej listy. To znaczy: najpierw sprawdziæ u³o¿enie wszystkich nawiasów wzglêdem siebie - jeœli jest b³êdne, program nie sprawdza kolejnych elementów. Nastêpnie, o ile nawiasy s¹ dobrze ustawione, nale¿y sprawdziæ sk³adniê wyra¿enia. B³êdne dzia³anie mo¿e zostaæ wykryte w trakcie obliczania wartoœci wyra¿enia.
+
+Warunki, które powinno spe³niaæ rozwi¹zanie
+
+Nale¿y wykorzystaæ Odwrotn¹ Notacjê Polsk¹ - przepisaæ wyra¿enie do tej postaci, a nastêpnie obliczyæ jego wartoœæ.
+Rozwi¹zanie nale¿y oprzeæ na W£ASNYCH IMPLEMENTACJACH liniowych struktur danych (listy, kolejki, stosy) - tych elementów nie mo¿na importowaæ z bibliotek.
+Mo¿na za³o¿yæ, ¿e ka¿da wprowadzona liczba oraz ka¿da wartoœæ obliczeñ (w tym poœrednich) zmieœci siê w typie ca³kowitym 8 bajtowym.
+Przyk³ady
+
+
+	  4
+	  ( ( 1 )
+wynik:  bledne nawiasy
+
+	  7
+	  [ ( 1 + 1243 ] )
+wynik:  bledne nawiasy
+
+	  7
+	  [ ( ~ + * ] )
+wynik:  bledne nawiasy
+
+	  2
+	  1 1
+wynik:  bledna skladnia
+
+	  6
+	  [ 1 * ] + 1
+wynik:  bledna skladnia
+
+	  9
+	  [ 2 ~ 1 * 2 ] ^ 0
+wynik:  bledne dzialanie		
+
+	  13       
+	  ( [ 1 + 1 ] * -2 ) ^ 2 + 5
+wynik:  21
