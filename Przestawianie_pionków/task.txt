@@ -1,0 +1,60 @@
+Dany jest graf nieskierowany o n wierzcho³kach i m krawêdziach oraz dwa pionki p1 i p2 ustawione w zadanych wierzcho³kach. Dodatkowo mamy zadany ci¹g wierzcho³ków, które nale¿y odwiedziæ.
+
+Zadanie polega na takim przestawieniu pionków p1 i p2 aby odwiedziæ wierzcho³ki z zadanego ci¹gu we wskazanej kolejnoœci pokonuj¹c jak najkrótsz¹ drogê.
+
+Przy czym jeœli oka¿e siê, ¿e oba pionki maj¹ tak samo daleko do zadanego wierzcho³a v to ruszyæ powinien siê ten, który ostatnio pozostawa³ bez ruchu. Jeœli natomiast do wierzcho³ka v nie bêdzie móg³ siê dostaæ ani 1 ani 2 pionek wówczas program ma wyœwietliæ komunikat: "Brak po³¹czenia z wierzcho³kiem v" i zakoñczyæ dzia³anie.
+
+Struktura umo¿liwiaj¹ca realizacjê tego zadania to graf oraz ewentualnie lista liniowa, kolejka. Nale¿y samodzielnie zaimplementowaæ te struktury.
+
+UWAGA: Nie mo¿na wykorzystywaæ gotowych struktur i algorytmów.
+
+Wejœcie:
+
+W pierwszej linii wejœcia znajduje siê n - liczba wierzcho³ków grafu;
+W drugiej linii wejœcia znajduje siê m - liczba krawêdzi grafu;
+W kolejnych m liniach znajduj¹ siê oddzielone spacjami pary wierzcho³ków u, v definiuj¹ce kolejne krawêdzie;
+W przedostatniej linii znajduj¹ siê oddzielone spacj¹ pionki p1, p2;
+W ostatniej linii znajduje siê liczba wierzcho³ków zadanego ci¹gu oraz wierzcho³ki tego ci¹gu oddzielone spacjami;
+Wyjœcie:
+
+Na wyjœciu wyœwietlamy oddzielone spacjami numery pionków, w kolejnoœci w jakiej by³y przestawiane.
+
+Przyk³ad 1
+
+Wejœcie:
+
+6
+7
+0 1
+0 3
+1 4
+3 4
+4 2
+2 5
+4 5
+3 5
+3 5 1 2
+Wyjœcie:
+
+2 1 2  
+Przyk³ad 2
+
+Wejœcie:
+
+8
+10
+0 1
+1 2
+0 3
+3 4
+3 5
+4 6
+4 5
+5 6
+5 7
+6 7
+0 6
+7 2 7 4 0 2 5 1
+Wyjœcie:
+
+1 2 2 1 1 2 1 

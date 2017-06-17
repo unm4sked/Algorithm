@@ -1,0 +1,48 @@
+Zadanie polega na utworzeniu i wyœwietleniu indeksu hase³ wystêpuj¹cych w podanym tekœcie. Indeks hase³ jest to lista hase³ wraz z wykazem linii, w których pojawia siê dane has³o.
+
+Has³a w wykazie maj¹ byæ uporz¹dkowane alfabetycznie, zaœ linie rosn¹co. W has³ach dopuszczane s¹ tylko znaki alfabetu angielskiego oraz cyfry. Numery linii s¹ liczbami naturalnymi (>0). Ka¿de has³o wystêpuje w indeksie tylko raz. Numery linii w wykazie linii pojedynczego has³a nie mog¹ siê powtarzaæ.
+
+Strukturami umo¿liwiaj¹cymi realizacjê tego zadania maj¹ byæ binarne drzewa wyszukiwania oraz ewentualnie lista liniowa. Nale¿y samodzielnie zaimplementowaæ te struktury.
+
+UWAGA: Nie mo¿na wykorzystywaæ gotowych struktur i algorytmów.
+
+Bardziej szczegó³owo:
+
+program w pierwszym wierszu otrzymuje liczbê linii tekstu do przetworzenia,
+nastêpnie w ka¿dym nowym wierszu otrzymuje liniê tekstu z³o¿on¹ z liczby wyrazów w tej linii oraz z kolejnych wyrazów (elementy linii s¹ oddzielone spacjami),
+program powinien przetworzyæ kolejno wszystkie linie tekstu a nastêpnie wyœwietliæ opisany wy¿ej indeks hase³,
+ka¿dy wpis w indeksie hase³ powinien mieæ postaæ:
+has³o => lista_numerów_linii
+Przyk³ad 1
+
+Wejœcie:
+
+4
+5 Adam Beata Celina Jan Zofia
+2 Leokadia Beata
+1 Zofia
+1 Adam
+Wyjœcie:
+
+Adam => 1 4 
+Beata => 1 2 
+Celina => 1 
+Jan => 1 
+Leokadia => 2 
+Zofia => 1 3 
+Przyk³ad 2
+
+Wejœcie:
+
+5
+3 a b c
+2 a a
+2 b a
+4 c b d a
+3 b b d
+Wyjœcie:
+
+a => 1 2 3 4 
+b => 1 3 4 5 
+c => 1 4 
+d => 4 5
