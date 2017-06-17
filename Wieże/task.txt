@@ -1,0 +1,38 @@
+£amiesz królewsk¹ pieczêæ i rozwijasz list:
+
+Dawniej w naszym królestwie panowa³ pokój. Poddani ¿yli dostatnio, kraj siê rozwija³, a nad ich bezpieczeñstwem czuwa³a królewska gwardia. Na ka¿dym rozdro¿u sta³a stra¿nica, aby kupcy mogli podró¿owaæ bez obaw, ¿e napadn¹ ich bandyci. Co nam dziœ z tego zosta³o? Wrogie armie atakuj¹ nas ze wszystkich stron, gospodarka chyli siê ku upadkowi, a w skarbcu brakuje z³ota na ¿o³d. Muszê odwo³aæ stra¿ników z wnêtrza królestwa, aby mogli broniæ naszych granic, ale gdy to zrobiê, na szlaki handlowe niechybnie znów wyjd¹ rozbójnicy. Hetmanie, doradŸ, co pocz¹æ.
+
+Ciskasz przeczytany list do ognia.
+
+W czasach dobrobytu wie¿e stra¿nicze stawiano na obu koñcach traktu, a ka¿d¹ z nich obsadza³ jeden ¿o³nierz. Budowano je tak, aby wartownik pe³ni¹cy s³u¿bê na jednej z wie¿ widzia³ wie¿ê po drugiej stronie. Je¿eli szlak by³ d³u¿szy, co najmniej jedna z wie¿ musia³a byæ odpowiednio wy¿sza. Na mapie, któr¹ dysponujesz, zaznaczone zosta³y jedynie wie¿e, dlatego musisz odtworzyæ przebieg traktów. 
+
+Twoim zadaniem, jako hetmana koronnego, jest okreœlenie najwiêkszej liczby ¿o³nierzy, którzy otrzymaj¹ rozkaz opuszczenia wie¿ stra¿niczych i ruszenia na front. Szlaki handlowe powinny byæ jednak wci¹¿ wzglêdnie chronione. Bêdzie tak wtedy, gdy na ka¿dym szlaku chocia¿ jedna z wie¿ bêdzie obsadzona przez wartownika. Ciê¿kie czasy wymagaj¹ szybkiego dzia³ania, dlatego wystarczaj¹ca bêdzie szacunkowa liczba. 
+
+Je¿eli dobrze doradzisz królowi, a armia zwyciê¿y w walce, ten zapewne odwdziêczy siê nadaj¹c Ci kolejne przywileje. Sprawa siê jednak komplikuje, bo król pod wp³ywem stresu sta³ siê ostatnio dra¿liwy i je¿eli podana liczba bêdzie za du¿a, a na szlakach pojawi¹ siê bandyci, król Ciê zdegraduje i odeœle jako wartownika na jedn¹ z wie¿. Gorzej, je¿eli liczba oka¿e siê za ma³a. Wówczas król pos¹dzi Ciê o wspó³pracê z nieprzyjacielem i poœle na szafot.
+W obliczeniach nale¿y przyj¹æ, ¿e promieñ zasiêgu wie¿y udale¿niony jest od jej wysokoœci wzorem r=sqrt(13*h).
+
+Wejœcie
+
+Program powinien w pierwszej linii przyj¹æ liczbê wie¿ stra¿niczych.
+W kolejnych liniach maj¹ znaleŸæ siê wspó³rzêdne x, y kolejnych wie¿ oraz ich wysokoœæ wyra¿one wartoœciami ca³kowitymi.
+W ostatniej linii maj¹ znaleŸæ siê dwie liczby, minimalna (min) oraz maksymalna (max) liczba ¿o³nierzy akceptowalna przez króla.
+Wyjœcie
+
+Je¿eli oszacowana liczba znajduje siê w obustronnie domkniêtym przedziale [min, max], nale¿y wyœwietliæ "przywileje". Je¿eli jest wiêksza od max, bêdzie to "wieza", a je¿eli mniejsza od min - "szafot".
+
+Przyk³ad
+
+Wejœcie
+
+7
+274 90 15
+370 131 3
+371 72 15
+315 70 5
+310 100 150
+284 127 5
+339 102 200
+3 5
+Wyjœcie
+
+przywileje

@@ -1,0 +1,41 @@
+Napisz program, który rozstrzygnie czy dane s³owo nale¿y do jêzyka generowanego przez gramatykê bezkontekstow¹. Program powinien wykorzystaæ algorytm CYK (Cocke–Younger–Kasami).
+
+UWAGA: Nie mo¿na wykorzystywaæ gotowych struktur i algorytmów.
+
+Wejœcie:
+
+Przyjmujemy nastêpuj¹c¹ notacjê: zmienne gramatyki oznaczamy du¿ymi literami od A do S. S jest zmienn¹ startow¹. Ma³e litery od a do z to symbole terminalne. Zmienn¹ od jej produkcji oddzielamy :, produkcje od siebie oddzielamy |.
+
+W pierwszej lini wejœcia znajduje siê badane s³owo;
+W drugiej lini wejœcia znajduje siê liczba zmiennych;
+W kolejnych liniach znajduj¹ siê produkcje gramatyki, jedna linia odpowiada produkcjom jednej zmiennej;
+W pierwszej kolejnoœci podajemy produkcje dla zmiennej startowej S, w kolejnych liniach odpowiernio produkcje dla zmiennej A, B, C, itd;
+Wyjœcie:
+
+Na wyjœciu wypisujemy odpowiednio s³owo "nie" lub "tak".
+
+Przyk³ad 1
+
+Wejœcie:
+
+aababaababaaababaabab
+4
+S:AB|BC
+A:BA|a
+B:CC|b
+C:AB|a
+Wyjœcie:
+
+tak 
+Przyk³ad 2
+
+Wejœcie:
+
+baa
+3
+S:bA|aB
+A:bAA|aSb|a
+B:aaBB|b
+Wyjœcie:
+
+nie 

@@ -1,0 +1,33 @@
+Napisz program, który wœród znajduj¹cych siê na powierzchni kuli punktów, odszuka parê najbli¿szych sobie. Program powinien wykorzystywaæ metodê dziel i zwyciê¿aj. 
+
+Do rozwi¹zania mo¿na wykorzystaæ dowolne klasy i funkcje z biblioteki standardowej C++. 
+
+Uwaga! Z uwagi na b³êdy zaokr¹gleñ przy zastosowaniu ró¿nych sposobów przeliczeñ wspó³rzêdnych k¹towych z wyjœcia zosta³a usuniêta koniecznoœæ podania d³ugoœci ortodromy. Proszê ponownie sprawdziæ swoje rozwi¹zania.
+
+Wejœcie
+
+W pierwszej linii dana jest liczba punktów. Mieœci sie ona w przedziale od 2 do 100 000 w³¹cznie.
+W drugiej linii podany jest obwód sfery, wyra¿ony liczb¹ zmiennoprzecinkow¹. W kolejnych liniach znajduj¹ siê definicje punktów sk³adaj¹ siê one z:
+
+trzyznakowego, nieunikalnego kodu punktu zapisanego wielkimi literami,
+szerokoœci geograficznej wyra¿onej w stopniach i w minutach k¹towych oraz symbolu N lub S okreœlaj¹cego pó³kulê,
+d³ugoœci geograficznej wyra¿onej w stopniach i w minutach k¹towych oraz symbolu E lub W okreœlaj¹cego pó³kulê.
+Wartoœci szerokoœci i d³ugoœci s¹ liczbami ca³kowitymi. K¹t szerokoœci przyjmuje wartoœci od 0 do 90 w³¹cznie, a d³ugoœci od 0 do 180 w³¹cznie. Minuty k¹towe w obu przypadkach przymuj¹ wartoœci od 0 do 59 w³¹cznie.
+Wyjœcie
+
+Nale¿y wyœwietliæ kody dwóch najbli¿szych sobie punktów w kolejnoœci alfabetycznej.
+
+Przyk³ad
+
+Wejœcie
+
+5
+40075
+LUB 51 15 N 22 34 E
+WAW 52 13 N 21 0 E
+NYC 40 42 N 74 0 W
+SYD 33 52 S 151 12 E
+TOK 35 41 N 139 41 E
+Wyjœcie
+
+LUB WAW

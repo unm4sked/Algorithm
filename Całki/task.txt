@@ -1,0 +1,29 @@
+Program ma ca³kowaæ numerycznie zadanie wyra¿enia. Korzystamy z metody Monte Carlo ca³kowania numerycznego. Ca³kowaæ bêdziemy albo wielomiany albo funkcjê exp{-ax^2}, a>0. Liczymy ca³ki oznaczone.
+
+Bardziej szczegó³owo: na pocz¹tku program wczytuje iloœæ n zapytañ - jest to iloœæ ca³ek do policzenia. Nastêpnie podawane jest n zapytañ. Zapytanie wygl¹da nastêpuj¹co: na pocz¹tku podawany jest znak 'C' lub 'E'. 'E'- oznacza, ¿e ca³kowaæ bêdziemy wyra¿enie exp{-ax^2}, a>0. 'C' oznacza, ¿e ca³kowaæ bêdziemy wielomian.
+
+Je¿eli wczytane zosta³o 'E', nastêpnie wczytujemy liczbê zmiennoprzecinkow¹ a. Dalej pobieramy granice ca³kowania. Najpierw lew¹ potem praw¹. S¹ to liczby zmiennoprzecinkowe.
+Je¿eli wczytane zosta³o 'C', nastêpnie wczytujemy stopieñ wielomianu powiêkszony o jeden (liczbê ca³kowit¹ nieujemn¹-jest to iloœæ wspó³czynników wielomianu), nastêpnie kolejno wczytujemy zmiennoprzecinkowe wspó³czynniki wielomianu (tak¿e zerowe). Np. wspó³czynniki [1,0,1,2] reprezentuj¹ wielomian 1+x^2+2x^3. Na koniec wczytujemy zmiennoprzecinkowe granice ca³kowania (najpierw lew¹ potem praw¹). Zak³adamy, ¿e wartoœci wielomianu w granicach ca³kowania mieszcz¹ siê w przedziale [-100,100].
+Wyniki u³amkowe zaokr¹glamy do dwóch miejsc po przecinku.
+
+Na wyjœciu wyœwietlamy wyniki kolejnych ca³ek. Dla ka¿dej ca³ki dokonujemy 100000000 losowañ.
+Przyk³ad
+
+Wejœcie
+
+2
+C
+3
+0
+0
+-1
+0
+1
+E
+1
+0.5
+1
+Wyjœcie
+
+-0.33
+0.29
